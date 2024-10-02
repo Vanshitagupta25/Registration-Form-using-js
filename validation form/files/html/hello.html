@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<style>
+.error{
+color:red;
+}
+</style>
+</head>
+<body>
+<h2> Registration Form</h2>
+<form method="post" onsubmit="return validateForm()">
+Full Name:<Input type="text" id="fullName"
+name="fullname">
+<span id="nameError" class="error"></span>
+<br> <br>
+Gender:<input type="radio" id="male" name="gender"
+value="male">Male
+<input type="radio" id="female" name="gender"
+value="female">FeMale
+<span id="genderError" class="error"></span>
+<br><br>
+Email: <input type="email" id="email" name="email">
+<span id="emailError" class="error"></span>
+<br><br>
+Skills:
+<Input type="checkbox" id="java" name="skills"
+value="java">Java
+<Input type="checkbox" id="js" name="skills"
+value="js">Java Script
+<Input type="checkbox" id="php" name="skills"
+value="php">Php
+<Input type="checkbox" id="fullstack" name="skills"
+value="fullstack">Fullstack
+<span id="skillsError" class="error"></span>
+<br><br>
+City:
+<select id="city" name="city">
+<option value="">Select a City</option>
+<option value="pune">Pune</option>
+<option value="Delhi">Delhi</option>
+<option value="Mumbai">Mumbai</option>
+</select>
+<span id="cityError" class="error"></span>
+<br><br><input type="submit" value="Sign Up">
+</form>
+<script src="./js/hello.js">
+
+</script>
+</body>
+</html>
